@@ -1,0 +1,40 @@
+  .hero {
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+  }
+  
+  .hero a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para la sección de características */
+  .features {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .feature {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: left;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
