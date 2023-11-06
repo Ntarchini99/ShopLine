@@ -1,7 +1,6 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../Context/CartContext";
 import '../ItemCount/ItemCount.css'
-import Swal from 'sweetalert2';
 
 
 export function ItemCount({ item }) {
@@ -29,13 +28,17 @@ export function ItemCount({ item }) {
       cartContext.addItemToCart(newItem);
       setCount(1);
   
-      Swal.fire({
-        icon: 'success',
-        title: 'Producto agregado al carrito',
-        showConfirmButton: false,
-        position: 'top-end',
-        timer: 1000, 
-      });
+      Toastify({
+        text: "Producto agregado al carrito",
+        duration: 2000,
+        gravity: "top", // `top` or `bottom`
+        position: "left", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
     }
   
     return (

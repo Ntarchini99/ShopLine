@@ -12,7 +12,7 @@ export const NavBar = () => {
   <nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm bg-dark navbar-dark border-bottom border-dark" data-bs-theme="dark">
     <div className="container-fluid">
       <Link to="/">
-        <div className="navbar-brand">
+        <div className="navbar-brand active">
           <img src={logo} alt="Logo"/>
         </div>
       </Link>
@@ -28,7 +28,7 @@ export const NavBar = () => {
             <Link to="/ItemListContainer" className="nav-link active" aria-current="page">Tienda</Link>
           </li>
           <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorias</a>
+            <a className="nav-link active dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false" >Categorias</a>
             <ul className="dropdown-menu">
               <li><Link to={`/Category/Celulares`} className="dropdown-item">Celulares</Link></li>
               <li><Link to={`/Category/Notebooks`} className="dropdown-item">Notebooks</Link></li>
