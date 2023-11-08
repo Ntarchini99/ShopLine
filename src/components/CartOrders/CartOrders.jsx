@@ -85,8 +85,8 @@ function CartOrders() {
   const mostrarMensajeConfirmacion = (pedidoId) => {
     Swal.fire({
       icon: 'success',
-      title: 'Gracias por confiar en TIENDAIMPORT ',
-      text: `Tu ID de compra es: ${pedidoId}`,
+      title: 'Gracias por confiar en ShopLine ',
+      text: `Tu orden de compra es: ${pedidoId}`,
       showCancelButton: false,
       confirmButtonText: 'Cerrar'
     });
@@ -136,9 +136,9 @@ function CartOrders() {
           />
           {errors.name && <p className="error-form">{errors.name}</p>}
           {errors.email && <p className="error-form">{errors.email}</p>}
-          <button type='button' class="button" onClick={comprar}>
+          <button type='button' className="button" onClick={comprar}>
             Finalizar Compra
-            <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+            <svg className="icon" viewBox="0 0 24 24" fill="currentColor">
               <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clip-rule="evenodd"></path>
             </svg>
           </button>

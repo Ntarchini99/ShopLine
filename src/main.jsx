@@ -15,10 +15,10 @@ import HomePage from './components/HomePage/HomePage.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  
+
   <React.StrictMode>
     {/* <CartContext.Provider value={[]}> */}
-      <CartProvider>
+    <CartProvider>
       <BrowserRouter>
 
         <Routes>
@@ -32,8 +32,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           />
 
           <Route path="/ItemListContainer" element={<>
-          <NavBar />
-          <ItemListContainer/>
+            <NavBar />
+            <ItemListContainer />
           </>}
           />
 
@@ -47,17 +47,17 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           </>} />
 
           <Route path="/cart" element={<>
-          <NavBar />
-          <Cart/>
+            <NavBar />
+            <Cart />
           </>}
           />
 
           <Route path="/checkout" element={<>
-          <NavBar />
-          <CartOrders/>
+            <NavBar />
+            <CartOrders />
           </>}
 
-          
+
           />
         </Routes>
 

@@ -1,16 +1,16 @@
-.btncarro{
+.btncarro {
     color: rgb(235, 235, 11);
     font-weight: bold;
 }
 
-.btn-cart{
-    background-color: green ;
-    border-radius:50%;
+.btn-cart {
+    background-color: green;
+    border-radius: 50%;
     color: antiquewhite;
     padding: 10px;
     margin-top: 1rem;
 }
 
-.carrito-png{
+.carrito-png {
     width: 30px;
 }
