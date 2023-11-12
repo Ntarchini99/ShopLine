@@ -7,8 +7,9 @@
 body {
   background-image: url('./assets/img/fondo.jpg');
   background-size: cover;
-  background-color: #D6CC99;
-  min-height: 98vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
 }
